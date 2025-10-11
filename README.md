@@ -40,12 +40,12 @@ It connects to your mailbox (e.g., Gmail or Outlook), uses **Spring AI** to anal
 
 ## 🧱 Architecture
 
-            ┌─────────────────────┐
-            │   Gmail / Outlook   │
-            └──────────┬──────────┘
-                       │
-             (OAuth API Integration)
-                       │
+                   ┌─────────────────────┐
+                   │       Gmail         │
+                   └──────────┬──────────┘
+                              │
+                    (OAuth API Integration)
+                              │
     ┌─────────────────────────▼─────────────────────────┐
     │ Spring Boot Backend (Spring AI)                   │
     │ - REST APIs                                       │
@@ -53,13 +53,13 @@ It connects to your mailbox (e.g., Gmail or Outlook), uses **Spring AI** to anal
     │ - AI Service Orchestration (OpenAI / Ollama)      │
     └─────────────────────────┬─────────────────────────┘
                               │
-    ┌───────────▼─────────────┐
-    │ React Frontend (Web UI) │
-    └───────────┬─────────────┘
-                │
-    ┌───────────▼─────────────┐
-    │ Chrome Extension (UI)   │
-    │ - Inline summaries      │
-    │ - Draft reply popup     │
-    └─────────────────────────┘
+                  ┌───────────▼─────────────┐
+                  │ React Frontend (Web UI) │
+                  └───────────┬─────────────┘
+                              │
+                  ┌───────────▼─────────────┐
+                  │ Chrome Extension (UI)   │
+                  │ - Inline summaries      │
+                  │ - Draft reply popup     │
+                  └─────────────────────────┘
 
