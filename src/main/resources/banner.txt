@@ -1,0 +1,39 @@
+${AnsiColor.GREEN}
+ ____                                 _ _
+|  _ \ ___  ___ _ __   ___  _ __   __| | |_   _
+| |_) / _ \/ __| '_ \ / _ \| '_ \ / _` | | | | |
+|  _ <  __/\__ \ |_) | (_) | | | | (_| | | |_| |
+|_| \_\___||___/ .__/ \___/|_| |_|\__,_|_|\__, |
+               |_|                        |___/
+
+${AnsiColor.BLUE}
+ ____                             _
+|  _ \ ___  ___ _ __   ___  _ __ | |   _   _
+| |_) / _ \/ __| '_ \ / _ \| '_ \| |  | | | |
+|  _ <  __/\__ \ |_) | (_) | | | | |__| |_| |
+|_| \_\___||___/ .__/ \___/|_| |_|_____\__, |
+               |_|                     |___/
+${AnsiBackground.WHITE}
+${AnsiColor.RED}Happy
+${AnsiColor.BLUE}Independence
+${AnsiColor.GREEN}Day
+${AnsiBackground.DEFAULT}
+${AnsiColor.RED}IN${AnsiColor.BLUE}D${AnsiColor.GREEN}IA${AnsiColor.DEFAULT}
+
+${AnsiColor.YELLOW}
+░█████████                                                                ░██ ░██
+░██     ░██                                                               ░██ ░██
+░██     ░██  ░███████   ░███████  ░████████   ░███████  ░████████   ░████████ ░██         ░██    ░██
+░█████████  ░██    ░██ ░██        ░██    ░██ ░██    ░██ ░██    ░██ ░██    ░██ ░██         ░██    ░██
+░██   ░██   ░█████████  ░███████  ░██    ░██ ░██    ░██ ░██    ░██ ░██    ░██ ░██         ░██    ░██
+░██    ░██  ░██               ░██ ░███   ░██ ░██    ░██ ░██    ░██ ░██   ░███ ░██         ░██   ░███
+░██     ░██  ░███████   ░███████  ░██░█████   ░███████  ░██    ░██  ░█████░██ ░██████████  ░█████░██
+                                  ░██                                                            ░██
+                                  ░██                                                      ░███████
+${AnsiColor.DEFAULT}
+${spring.application.name}
+${AnsiColor.RED}
+Application Version: ${spring.application.version} or ${application.version}
+Spring Boot Version : ${spring-boot.version}
+${AnsiColor.DEFAULT}
+

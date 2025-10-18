@@ -26,6 +26,7 @@ public class EmailGenerationService {
         this.webClient = webClientBuilder.build();
     }
 
+    // TODO : Modify the ability to use complex prompt using last email and rough draft to be provided by user, the AI will use combined context to generate better email
     public String generateEmail(EmailRequest emailRequest) {
         // Logic to generate email using AI model
 
@@ -45,7 +46,6 @@ public class EmailGenerationService {
                         )
                 }
         );
-// TODO: Fix null in geminiApiKey and geminiApiUrl
         String response = webClient.post()
                 .uri(geminiApiUrl  + geminiApiKey)
                 .header("Content-Type", "application/json")
@@ -55,16 +55,6 @@ public class EmailGenerationService {
                 .block();
 
         return extractResponseContent(response);
-
-//        Client client = Client.builder().apiKey("AIzaSyDvP33MKX8-KK3LiYA_hVS51zDm8Z05Vzo").build();
-//
-//        GenerateContentResponse response =
-//                client.models.generateContent(
-//                        "gemini-2.5-flash",
-//                        prompt,
-//                        null);
-//
-//        return response.text() ;
     }
 
     private String extractResponseContent(String response) {
